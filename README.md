@@ -44,6 +44,12 @@ java -cp java-backend/out CampusServer .
 
 Open [http://localhost:8080](http://localhost:8080). To use a different port, set `PORT` before launching the server, for example `$env:PORT = "8081"`.
 
+## Deploy the Frontend to Vercel
+
+The root `vercel.json` publishes `frontend/` and maps the portal and admin page URLs to their HTML files. Deploy from the repository root with the default project root; do not set the Vercel Root Directory to `frontend`.
+
+This only deploys the static frontend. Login, dashboard data, alerts, and graph APIs are served by the Java backend and will not work on Vercel until that backend is deployed separately and the frontend API requests are configured to use its public URL. Do not expose the local Java server directly to the internet.
+
 The first startup generates 680 synthetic login events over the previous 30 days, 100 student accounts, 30 staff accounts, and 20 devices. It writes `data/login_events.csv` and the role-specific `data/login_frequency.csv`. Subsequent starts reload the event CSV and keep newly submitted login attempts. Do not delete the CSVs unless you intend to reset the prototype data.
 
 ## Demo Sign-Ins

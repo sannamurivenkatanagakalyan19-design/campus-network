@@ -1,0 +1,13 @@
+{
+  "outputDirectory": "frontend",
+  "rewrites": [
+    { "source": "/student-login", "destination": "/portal.html" },
+    { "source": "/staff-login", "destination": "/portal.html" },
+    { "source": "/admin-login", "destination": "/admin-login.html" },
+    { "source": "/admin/student-graph", "destination": "/graph.html" },
+    { "source": "/admin/staff-graph", "destination": "/graph.html" },
+    { "source": "/admin/alerts", "destination": "/alerts.html" },
+    { "source": "/admin/dmgt", "destination": "/dmgt.html" },
+    { "source": "/admin", "destination": "/admin.html" }
+  ]
+}
