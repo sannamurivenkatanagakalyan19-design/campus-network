@@ -1,5 +1,10 @@
 {
   "outputDirectory": "frontend",
+  "functions": {
+    "api/admin/[action].js": {
+      "includeFiles": "data/*.csv"
+    }
+  },
   "rewrites": [
     { "source": "/student-login", "destination": "/portal.html" },
     { "source": "/staff-login", "destination": "/portal.html" },
