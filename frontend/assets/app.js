@@ -483,8 +483,22 @@ function setupLogout() {
   }));
 }
 
+function setupConceptsNavigation() {
+  const nav = $('.side-nav');
+  if (!nav) return;
+  const link = document.createElement('a');
+  link.href = '/admin/concepts';
+  link.innerHTML = '<span class="nav-glyph">◇</span>Concepts';
+  if (location.pathname === '/admin/concepts') {
+    link.classList.add('active');
+    link.setAttribute('aria-current', 'page');
+  }
+  nav.append(link);
+}
+
 setupPasswordToggles();
 setupLogout();
+setupConceptsNavigation();
 const page = document.body.dataset.page;
 if (page === 'portal') setupPortal();
 if (page === 'admin-login') setupAdminLogin();

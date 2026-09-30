@@ -133,6 +133,7 @@ public class CampusServer {
             case "/admin/staff-graph" -> "graph.html";
             case "/admin/alerts" -> "alerts.html";
             case "/admin/dmgt" -> "dmgt.html";
+                case "/admin/concepts" -> "concepts.html";
                     default -> route.startsWith("/assets/") ? route.substring(1) : "index.html";
         };
         Path file = root.resolve("frontend").resolve(page).normalize();

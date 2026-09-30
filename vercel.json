@@ -13,6 +13,7 @@
     { "source": "/admin/staff-graph", "destination": "/graph.html" },
     { "source": "/admin/alerts", "destination": "/alerts.html" },
     { "source": "/admin/dmgt", "destination": "/dmgt.html" },
+    { "source": "/admin/concepts", "destination": "/concepts.html" },
     { "source": "/admin", "destination": "/admin.html" }
   ]
 }

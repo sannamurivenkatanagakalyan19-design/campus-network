@@ -1,4 +1,4 @@
-# KIET Campus Login Security
+of # KIET Campus Login Security
 
 A local academic prototype for reviewing synthetic campus identity events. Student and staff portal sign-ins are sent to a Java monitoring service, evaluated against propositional security rules, associated with user/device graphs, and exported for Python statistical analysis. The admin console combines event summaries, interactive relationship graphs, Java alerts, Python anomaly results, and CSV downloads.
 

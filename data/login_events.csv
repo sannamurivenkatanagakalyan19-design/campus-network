@@ -794,3 +794,6 @@ EVT-5F11B8A6,staff001,Lee Hayes,staff,DEV-LIB-01,Library computer 1,Library comp
 EVT-8C8FC471,staff001,Lee Hayes,staff,DEV-WRK-01,Work laptop 1,Work laptop,2026-09-28T15:12:55,2026-09-28,10.42.10.60,North Campus,failed,false,false,,,,Low,
 EVT-6FC4D790,staff001,Lee Hayes,staff,DEV-WRK-03,Work laptop 3,Work laptop,2026-09-28T15:12:59,2026-09-28,10.42.4.125,North Campus,failed,false,false,,,,Low,
 EVT-AE82C978,student001,Jordan Rivera,student,DEV-PER-02,Personal device 2,Personal phone,2026-09-29T09:04:48,2026-09-29,10.42.8.207,North Campus,success,false,false,,,,Low,
+EVT-4FAA016C,student001,Jordan Rivera,student,DEV-PER-02,Personal device 2,Personal phone,2026-09-30T11:59:24,2026-09-30,10.42.8.207,North Campus,success,false,false,,,,Low,
+EVT-4298B301,staff001,Lee Hayes,staff,DEV-OFF-03,Staff desktop 3,Staff desktop,2026-09-30T12:00:25,2026-09-30,10.42.8.15,North Campus,success,false,false,,,,Low,
+EVT-D1A6CC77,student100,Casey Kim,student,DEV-LIB-04,Library computer 4,Library computer,2026-09-30T12:00:45,2026-09-30,10.42.6.153,North Campus,success,true,false,,,,Low,

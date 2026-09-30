@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d17">
+  <title>Core Concepts | KIET Campus</title>
+  <link rel="stylesheet" href="/assets/app.css">
+  <link rel="stylesheet" href="/assets/glass.css">
+  <link rel="stylesheet" href="/assets/soc.css">
+  <script defer src="/assets/app.js"></script>
+</head>
+<body class="console-page" data-page="concepts">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/"><span class="brand-mark brand-mark-admin">N</span><span><strong>KIET</strong><small>SECURITY OPS</small></span></a>
+      <div class="sidebar-label">MONITORING</div>
+      <nav class="side-nav">
+        <a href="/admin"><span class="nav-glyph">▦</span>Overview</a>
+        <a href="/admin/student-graph"><span class="nav-glyph">◌</span>Student graph</a>
+        <a href="/admin/staff-graph"><span class="nav-glyph">⌘</span>Staff graph</a>
+        <a href="/admin/alerts"><span class="nav-glyph">!</span>Alert review</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="session-user"><span class="avatar">SA</span><span><b>Security admin</b><small>LOCAL DEMO SESSION</small></span></div>
+        <button class="logout-button" data-logout><span>↪</span> Sign out</button>
+        <p class="sidebar-footnote">KIET CAMPUS<br>IDENTITY MONITOR / V1.0</p>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <header class="topbar">
+        <div><p class="eyebrow">OPERATIONS / REFERENCE</p><h1>Core concepts</h1></div>
+        <div class="topbar-right">
+          <a class="button button-outline compact-button" href="/admin/student-graph">Explore login graphs ↗</a>
+          <a class="button button-outline compact-button" href="/admin/dmgt">View logic rules ↗</a>
+        </div>
+      </header>
+      <section class="content-area">
+        <div class="notice-strip"><span class="notice-icon">i</span><span><b>MONITORING MODEL</b> These concepts explain how campus login activity is represented, evaluated, and surfaced for review.</span></div>
+        <section class="concepts-section" aria-label="Campus security concepts">
+          <div class="section-intro"><p class="eyebrow">HOW THE MONITORING WORKS</p><h2>From identity to investigation</h2></div>
+          <article class="concept-item"><span>01 / DESIGN</span><h3>Object-oriented modeling</h3><p>Accounts, devices, login events, and alerts are modeled as distinct domain objects. Student and staff roles provide context for interpreting an event.</p></article>
+          <article class="concept-item"><span>02 / ADSA</span><h3>Relationship graphs</h3><p>A login connects an account to a device, location, and event. Graph views make those relationships and repeated patterns easier to inspect.</p></article>
+          <article class="concept-item"><span>03 / DMGT</span><h3>Propositional logic</h3><p>Rules combine evidence with operators such as AND and OR. For example, a new device used at an unusual hour can trigger a suspicious-login review.</p></article>
+          <article class="concept-item"><span>04 / ANALYSIS</span><h3>Anomaly detection</h3><p>Statistical analysis compares login frequency with expected patterns and flags unusual activity for investigation, rather than treating it as proof of misuse.</p></article>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
